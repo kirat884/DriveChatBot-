@@ -48,7 +48,7 @@ def search_drive(query: str) -> str:
 
 
 
-st.title("Hello, Harkirat!")
+st.title("🤖 DriveChatBot")
 
 # 1. Initialize chat history in session state
 # 1. Initialize chat history and stateful AI session in our vault
