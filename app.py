@@ -48,7 +48,40 @@ def search_drive(query: str) -> str:
 
 
 
+# A) Set a professional page title and subheader
 st.title("🤖 DriveChatBot")
+st.caption("Stateful Conversational AI Agent for Google Drive File Discovery")
+
+# B) Build a premium Recruiter Sidebar Guide!
+with st.sidebar:
+    st.title("💼 Recruiter Welcome Hub")
+    st.markdown("""
+    Welcome! This Conversational AI Agent was engineered by **Harkirat Singh** to demonstrate production-grade Python backend development, API integration, and AI tool calling.
+    
+    ### 🔍 Live Test Prompts:
+    *Copy and paste these exact queries into the chat box to test the AI's capabilities live!*
+    
+    1. **Find real folders:**
+       * *"Do I have a folder named 'pics'?"*
+    2. **Find real documents:**
+       * *"Find my Daily Report files."*
+    3. **Get direct links:**
+       * *"Find the bounceup folder and give me a clickable link to open it."*
+    4. **Test AI memory:**
+       * Ask: *"Do I have any files about invoices?"*
+       * Then ask: *"What was the ID of that folder again?"* (Gemini will remember the previous context!).
+       
+    ---
+    
+    ### 🛠️ Architecture Highlights:
+    * **Google Gemini 2.5 Flash** (Modern `google-genai` SDK)
+    * **Google Drive API v3** (OAuth 2.0 Service Account credentials)
+    * **Dynamic Tool Calling / Function Calling** (ReAct agent pattern)
+    * **Stateful Chat Session Memory** (`st.session_state` persistence)
+    * **DevOps Best Practices** (Platform-agnostic dependencies & secure fallback configuration)
+    
+    🔗 **[View Source Code on GitHub](https://github.com/kirat884/DriveChatBot-)**
+    """)
 
 # 1. Initialize chat history in session state
 # 1. Initialize chat history and stateful AI session in our vault
